@@ -401,6 +401,8 @@ GameObject:
   - component: {fileID: 153178071}
   - component: {fileID: 153178073}
   - component: {fileID: 153178072}
+  - component: {fileID: 153178074}
+  - component: {fileID: 153178075}
   m_Layer: 0
   m_Name: SwimsuitHoshinoImage
   m_TagString: Untagged
@@ -465,6 +467,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 153178070}
   m_CullTransparentMesh: 1
+--- !u!114 &153178074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153178070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 153178072}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &153178075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153178070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1e6f8e333a72e4cadd390f67d8ffc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HoshinoButton: {fileID: 1987233559}
+  SwimsuitButton: {fileID: 153178074}
+  ArmedButton: {fileID: 1901898977}
+  HoshinoStanding: {fileID: 1550723729}
+  SwimsuitHoshinoStanding: {fileID: 1006499699}
+  ArmedHoshinoStanding: {fileID: 678531620}
 --- !u!1 &167774823
 GameObject:
   m_ObjectHideFlags: 0
@@ -1332,6 +1396,7 @@ GameObject:
   - component: {fileID: 678531621}
   - component: {fileID: 678531623}
   - component: {fileID: 678531622}
+  - component: {fileID: 678531624}
   m_Layer: 0
   m_Name: ArmedHoshinoStanding
   m_TagString: Untagged
@@ -1396,6 +1461,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 678531620}
   m_CullTransparentMesh: 1
+--- !u!114 &678531624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678531620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1e6f8e333a72e4cadd390f67d8ffc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HoshinoButton: {fileID: 1987233559}
+  SwimsuitButton: {fileID: 153178074}
+  ArmedButton: {fileID: 1901898977}
+  HoshinoStanding: {fileID: 1550723729}
+  SwimsuitHoshinoStanding: {fileID: 1006499699}
+  ArmedHoshinoStanding: {fileID: 678531620}
 --- !u!1 &737701332
 GameObject:
   m_ObjectHideFlags: 0
@@ -2139,6 +2222,7 @@ GameObject:
   - component: {fileID: 1006499700}
   - component: {fileID: 1006499702}
   - component: {fileID: 1006499701}
+  - component: {fileID: 1006499703}
   m_Layer: 0
   m_Name: SwimsuitHoshinoStanding
   m_TagString: Untagged
@@ -2203,6 +2287,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1006499699}
   m_CullTransparentMesh: 1
+--- !u!114 &1006499703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006499699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1e6f8e333a72e4cadd390f67d8ffc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HoshinoButton: {fileID: 1987233559}
+  SwimsuitButton: {fileID: 153178074}
+  ArmedButton: {fileID: 1901898977}
+  HoshinoStanding: {fileID: 1550723729}
+  SwimsuitHoshinoStanding: {fileID: 1006499699}
+  ArmedHoshinoStanding: {fileID: 678531620}
 --- !u!1 &1020896756
 GameObject:
   m_ObjectHideFlags: 0
@@ -3541,13 +3643,14 @@ GameObject:
   - component: {fileID: 1550723730}
   - component: {fileID: 1550723732}
   - component: {fileID: 1550723731}
+  - component: {fileID: 1550723733}
   m_Layer: 0
   m_Name: HoshinoStanding
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1550723730
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3605,6 +3708,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1550723729}
   m_CullTransparentMesh: 1
+--- !u!114 &1550723733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550723729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1e6f8e333a72e4cadd390f67d8ffc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HoshinoButton: {fileID: 1987233559}
+  SwimsuitButton: {fileID: 153178074}
+  ArmedButton: {fileID: 1901898977}
+  HoshinoStanding: {fileID: 1550723729}
+  SwimsuitHoshinoStanding: {fileID: 1006499699}
+  ArmedHoshinoStanding: {fileID: 678531620}
 --- !u!1 &1563723478
 GameObject:
   m_ObjectHideFlags: 0
@@ -4482,6 +4603,8 @@ GameObject:
   - component: {fileID: 1901898974}
   - component: {fileID: 1901898976}
   - component: {fileID: 1901898975}
+  - component: {fileID: 1901898977}
+  - component: {fileID: 1901898978}
   m_Layer: 0
   m_Name: ArmedHoshinoImage
   m_TagString: Untagged
@@ -4546,6 +4669,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1901898973}
   m_CullTransparentMesh: 1
+--- !u!114 &1901898977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901898973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1901898975}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1901898978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901898973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1e6f8e333a72e4cadd390f67d8ffc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HoshinoButton: {fileID: 1987233559}
+  SwimsuitButton: {fileID: 153178074}
+  ArmedButton: {fileID: 1901898977}
+  HoshinoStanding: {fileID: 1550723729}
+  SwimsuitHoshinoStanding: {fileID: 1006499699}
+  ArmedHoshinoStanding: {fileID: 678531620}
 --- !u!1 &1912928571
 GameObject:
   m_ObjectHideFlags: 0
@@ -4649,7 +4834,9 @@ GameObject:
   - component: {fileID: 1987233556}
   - component: {fileID: 1987233558}
   - component: {fileID: 1987233557}
-  m_Layer: 0
+  - component: {fileID: 1987233559}
+  - component: {fileID: 1987233560}
+  m_Layer: 5
   m_Name: HoshinoImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4713,6 +4900,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1987233555}
   m_CullTransparentMesh: 1
+--- !u!114 &1987233559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987233555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1987233557}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1987233560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987233555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1e6f8e333a72e4cadd390f67d8ffc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HoshinoButton: {fileID: 1987233559}
+  SwimsuitButton: {fileID: 153178074}
+  ArmedButton: {fileID: 1901898977}
+  HoshinoStanding: {fileID: 1550723729}
+  SwimsuitHoshinoStanding: {fileID: 1006499699}
+  ArmedHoshinoStanding: {fileID: 678531620}
 --- !u!1 &2020143025
 GameObject:
   m_ObjectHideFlags: 0
