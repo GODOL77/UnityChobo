@@ -5,6 +5,8 @@ public class EquipmentSlot : MonoBehaviour
 {
     public Image equipmentIcon;  // 장비 아이콘을 표시할 Image
     public Button slotButton;    // 장비 슬롯 버튼
+    public GameObject equipmentPanel;  // 장비 목록 창 (Panel)
+
 
     // 장비 선택 시 호출되는 함수
     public void OnSlotClicked(Sprite selectedIcon, string equipmentName)
@@ -14,5 +16,12 @@ public class EquipmentSlot : MonoBehaviour
         Debug.Log(equipmentName + "이(가) 선택되었습니다.");
         
         // 추가적으로 선택된 장비를 실제로 장착하는 로직
+    }
+    public void CloseEquipment()
+    {
+        if (equipmentPanel != null)
+        {
+            equipmentPanel.SetActive(false);  // equipmentPanel를 비활성화
+        }
     }
 }
