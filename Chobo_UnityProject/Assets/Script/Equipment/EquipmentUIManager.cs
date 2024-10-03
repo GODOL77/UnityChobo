@@ -10,4 +10,12 @@ public class EquipmentUIManager : MonoBehaviour
         // 장비 목록 창의 활성화 여부를 토글
         equipmentPanel.SetActive(!equipmentPanel.activeSelf);
     }
+    public void CloseEquipment()
+    {
+        if (equipmentPanel != null)
+        {
+            equipmentPanel.SetActive(false);  // equipmentPanel를 비활성화
+        }
+    }
+
 }
