@@ -16,29 +16,23 @@ public class HealthText : MonoBehaviour
     public TextMeshProUGUI HITText;
     public Button TestButton;
 
-    private int health; // health ���� ������ ����
+    public int health; // health ���� ������ ����
 
     // Start is called before the first frame update
     void Start()
     {
-        health = 10; // �ʱ�ȭ�� health �� ����
         healthText.text = health.ToString();
-        MindText.text = "10";
-        ATKText.text = "10";
-        DEFText.text = "10";
-        SPEEDText.text = "10";
-        CCText.text = "10";
-        AVText.text = "10";
-        HITText.text = "10";
+        MindText.text = health.ToString();
+        ATKText.text = health.ToString();
+        DEFText.text = health.ToString();
+        SPEEDText.text = health.ToString();
+        CCText.text = health.ToString();
+        AVText.text = health.ToString();
+        HITText.text = health.ToString();
     }
 
     void Update()
     {
-        // ���콺 ���� ��ư�� Ŭ���Ǿ��� ��
-        if (Input.GetMouseButtonDown(0))
-        {
-            health += 100; // health ���� 10 ����
-            healthText.text = health.ToString(); // ������ ���� �ؽ�Ʈ�� ��ȯ�Ͽ� ǥ��
-        }
+        
     }
 }
