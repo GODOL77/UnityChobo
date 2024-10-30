@@ -16,12 +16,12 @@ public class HealthText : MonoBehaviour
     public TextMeshProUGUI HITText;
     public Button TestButton;
 
-    private int health; // health °ªÀ» ÀúÀåÇÒ º¯¼ö
+    private int health; // health ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
     // Start is called before the first frame update
     void Start()
     {
-        health = 10; // ÃÊ±âÈ­µÈ health °ª ¼³Á¤
+        health = 10; // ï¿½Ê±ï¿½È­ï¿½ï¿½ health ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         healthText.text = health.ToString();
         MindText.text = "10";
         ATKText.text = "10";
@@ -34,11 +34,11 @@ public class HealthText : MonoBehaviour
 
     void Update()
     {
-        // ¸¶¿ì½º ¿ÞÂÊ ¹öÆ°ÀÌ Å¬¸¯µÇ¾úÀ» ¶§
+        // ï¿½ï¿½ï¿½ì½º ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ ï¿½ï¿½
         if (Input.GetMouseButtonDown(0))
         {
-            health += 10; // health °ªÀ» 10 Áõ°¡
-            healthText.text = health.ToString(); // Áõ°¡µÈ °ªÀ» ÅØ½ºÆ®·Î º¯È¯ÇÏ¿© Ç¥½Ã
+            health += 100; // health ï¿½ï¿½ï¿½ï¿½ 10 ï¿½ï¿½ï¿½ï¿½
+            healthText.text = health.ToString(); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ø½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ï¿ï¿½ Ç¥ï¿½ï¿½
         }
     }
 }
