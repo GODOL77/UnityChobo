@@ -21,13 +21,12 @@ public class WritingTest2 : MonoBehaviour
         // 삽입
         for (int i = 0; i < num.Length; i++)
         {
-            using (IDbCommand dbCommand = dbConnerction.CreateCommand())
-            {
-                string insertQuery = $"INSERT INTO test2 (순서, 직업, 나이, 성별) VALUES ({num[i]}, '{job[i]}', {age[i]}, '{gender[i]}')";
-                dbCommand.CommandText = insertQuery;
-                dbCommand.ExecuteNonQuery();
-                dbCommand.Dispose();
-            }
+            IDbCommand dbCommand = dbConnerction.CreateCommand();
+            string insertQuery = $"INSERT INTO test2 (순서, 직업, 나이, 성별) VALUES ({num[i]}, '{job[i]}', {age[i]}, '{gender[i]}')";
+            dbCommand.CommandText = insertQuery;
+            dbCommand.ExecuteNonQuery();
+            dbCommand.Dispose();
+        
         }
         dbConnerction.Close();
     }
