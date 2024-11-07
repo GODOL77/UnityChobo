@@ -17,4 +17,19 @@ public class CharacterPanelController : MonoBehaviour {
         CharacterPanels.SetActive(false);
         Debug.Log("ㄴㄴㄴㄴ");
     }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            if (CharacterPanels.activeSelf)
+            {
+                HideCharacterPanels();
+            }
+            else
+            {
+                ShowCharacterPanels();
+            }
+        }
+    }
 }
