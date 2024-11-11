@@ -369,6 +369,8 @@ GameObject:
   m_Component:
   - component: {fileID: 287845455}
   - component: {fileID: 287845454}
+  - component: {fileID: 287845456}
+  - component: {fileID: 287845457}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -443,6 +445,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &287845456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287845453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2988d8b96ff48f448fc31b568230a24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hpBar: {fileID: 0}
+--- !u!114 &287845457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287845453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2988d8b96ff48f448fc31b568230a24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hpBar: {fileID: 851997917}
 --- !u!1 &354852990
 GameObject:
   m_ObjectHideFlags: 0
@@ -1194,7 +1222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hpBar: {fileID: 851997916}
-  currHp: 0
+  currHp: 100
   maxHp: 1000
 --- !u!1 &997380432
 GameObject:
