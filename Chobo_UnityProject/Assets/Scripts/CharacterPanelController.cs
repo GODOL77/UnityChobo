@@ -20,7 +20,7 @@ public class CharacterPanelController : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.C)) 
         {
             if (CharacterPanels.activeSelf)
             {
